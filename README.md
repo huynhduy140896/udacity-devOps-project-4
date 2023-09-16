@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg&circle-token=<YOUR_STATUS_API_TOKEN>)](<LINK>)
+[![CircleCI](https://circleci.com/gh/huynhduy140896/udacity-devOps-project-4.svg?style=svg&circle-token=1915591979afcd184b0de13cb9a819f50ee26096)](https://github.com/huynhduy140896/udacity-devOps-project-4)
 
 
 ## Project Overview
