@@ -1,0 +1,29 @@
+# This config was automatically generated from your source code
+# Stacks detected: deps:python:.
+version: 2.1
+orbs:
+  python: circleci/python@2
+jobs:
+  test:
+    # Install dependencies and run tests
+    docker:
+      - image: python:3.7.3-stretch
+    steps:
+      - checkout
+      - run: 
+          name: "setup venv"
+          command: |
+            python3 -m venv ~/.project4
+      - run:
+          name: "Install dependencies"
+          command: |
+            make install
+      - run:
+          name: "Check syntax code"
+          command: |
+            make lint
+workflows:
+  default:
+    jobs:
+      - test
+

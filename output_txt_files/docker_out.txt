@@ -1,0 +1,21 @@
+$ docker logs  k8s_udacity_udacity_default_3576c39c-1084-4be3-9406-31739e5db7a0_0
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-259-164
+[2023-09-09 08:17:38,437] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2023-09-09 08:17:38,453] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2023-09-09 08:17:38,461] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2023-09-09 08:17:38,465] INFO in app: prediction info:
+[20.35373177134412]
+127.0.0.1 - - [09/Sep/2023 08:17:38] "POST /predict HTTP/1.1" 200 -
